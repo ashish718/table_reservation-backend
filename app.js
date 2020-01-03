@@ -1,8 +1,7 @@
 const express = require('express');
 const app = express();
-const mysql = require('mysql');
 const bodyparser = require('body-parser');
-let db = require('./db');
+const db = require('./config/db');
 const reservationRoute = require('./routes/reservation');
 
 app.use(bodyparser.json());
